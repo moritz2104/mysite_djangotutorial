@@ -1,0 +1,7 @@
+Täterätääää:
+<h1>{{ question.question_text }}</h1>
+<ul>
+	{% for xxx in question.choicex_set.all %}
+		<li>{{ xxx.choice_text }}</li>
+	{% endfor %}
+</ul>
