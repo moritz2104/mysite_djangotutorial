@@ -1,3 +1,7 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static "polls/style.css" %}">
+
 {% if letzte_fragen_liste %}
 	<ul>
 		{% for question in letzte_fragen_liste %} <!--question könnte hier auch i sein-->
@@ -5,5 +9,5 @@
 		{% endfor %}
 	</ul>
 {% else %}
-	<p>No polls are available.</p>
+	<p>Es gibt keine Polls.</p>
 {% endif %}
